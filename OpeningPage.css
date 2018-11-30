@@ -1,0 +1,52 @@
+html{
+    background-color: black;
+    background-size: 100%;
+}
+
+body{
+    max-width: 500px;
+    margin: auto;
+    color: white;
+}
+
+img {
+    border: 2.5px solid white;
+    margin-top: 100px;
+    border-radius: 50%;
+  }
+
+footer{
+    position: fixed;
+    bottom: 0%;
+}
+header{
+    margin-top: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    position: fixed;
+    top: 0;
+    width: 120%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font: bold 15px Georgia, serif;
+    text-align: center;
+    padding: 30px 32px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #2b2b2b;
+}
