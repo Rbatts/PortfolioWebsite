@@ -1,19 +1,47 @@
 html{
-    background-color: black;
-    background-size: 100%;
+    background-image: url("https://images6.alphacoders.com/427/thumb-1920-427036.jpg");
+    background-repeat: repeat;
 }
 
 body{
     color: white;
 }
 
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+p{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 800px;
+    background: rgba(169,169,169,0.5);
+    color: black;
+    font: 15px Helvetica, serif;
+}
+h1{
+    font: 60px Helvetica, serif;
+}
+
 img {
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
+    margin-left: 20%;
+
   }
 
-footer{
-    position: fixed;
-    bottom: 0%;
+  .footer {
+    color: #eeeeee;
+    padding-top: 10px;
+    display: block;
+    margin-top: 20px; /* space between content and footer */
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
 }
 header{
     margin-top: 100px;
@@ -37,7 +65,7 @@ li {
 li a {
     display: block;
     color: white;
-    font: bold 15px Georgia, serif;
+    font: 15px Helvetica, serif;
     text-align: center;
     padding: 30px 32px;
     text-decoration: none;
