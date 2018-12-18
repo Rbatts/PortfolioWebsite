@@ -37,21 +37,30 @@ p{
     font: 20px Helvetica, serif;
 }
 h1{
-    max-width: 815px;
-    margin: auto;
     font: 60px Helvetica, serif;
     Margin-top: 50px;
 }
 
+h2{
+    font: 30px Helvetica, serif;
+    Margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .image1{
-    margin-top: 50px;
-    margin-left: 40px;
-    height: 180px;
-    width: 180px;
-    border-radius: 80%;
+    margin-top: 55px;
+    margin-left: 70px;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
     border: 2px solid red;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+    transition: transform .2s;
+  }
+
+  .image1:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
   }
 
 .image2 {
@@ -64,18 +73,25 @@ h1{
   }
   
   .image3{
-    margin-top: 50px;
-    margin-left: 40px;
+    margin-top: 55px;
+    margin-left: 70px;
     height: 220px;
     width: 220px;
     border-radius: 50%;
-    border: 2px solid blue;
+    border: 2px solid red;
+    transition: transform .2s;
   }
 
-header{
-    margin-top: 100px;
-}
+  .image3:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 
+  img{
+    width: 700px; 
+    height:500px;
+  }
 
 button:hover {
     background-image: url("https://i.pinimg.com/474x/64/8c/fa/648cfa7c57d3c085c1033eba8294c48f--wood-effect-wallpaper-wallpaper-uk.jpg");
@@ -89,14 +105,6 @@ button:hover {
     text-align: center;
     padding: 10px 70px;
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
- }
  
  #nav,#nav ul {
     list-style: none outside none;
