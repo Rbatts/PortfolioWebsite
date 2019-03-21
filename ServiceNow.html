@@ -6,29 +6,63 @@
         <li><a href="HomePage.html">Home</a></li>
         <li><a class="hsubs" href="#">Project Pages</a>
             <ul class="subs">
-                    <li><a href="Markdown.html">Markdown Presentation</a></li>
+                    <li><a href="Markdown.html">Markdown Session</a></li>
                     <li><a href="OutOfOffice.html">Out Of Office</a></li>
-                    <li><a href="ServiceNow.html">Support Works</a></li>
-                    <li><a href="MegaMenu.html">Mega Menu</a></li>
+                    <li><a href="ServiceNow.html">Service Now</a></li>
+                    <li><a href="InvitesApp.html">Invites App</a></li>
             </ul>
-        </li>
-        <li><a class="hsubs" href="AboutMe.html">About Me</a>
-        </li>
-        <li><a class="hsubs" href="TextBasedAdventureGame.html">Personal Project</a>
-        </li>
     </ul>
 </div>
 
 <div class="centered">
 <img src="https://cdn.dribbble.com/users/728449/screenshots/2035949/service_now.gif" class="image2" title="Markdown Project"alt="Avatar">
 </div>
-<center><h1>Service Now / Support Works</h1></center>
+<center><h1>Service Now</h1></center>
 <div class="content">
 <body>
        <p>
-            This is my evidence for service now.
-            </p>
-            
+        As a part of my role as a software developer, I have the responsibility of resolving tickets raised by our users. When working 
+        on service now I open small tasks that can vary in their seriousness and importance. I usually deal with small tasks that users 
+        are facing and spend time fixing the bugs that may have arisen. This falls under the maintenance section of the software development 
+        life cycle and is a necessary part to all of our applications.
+        </p>
+        <br>
+        <center><img src='https://lh3.googleusercontent.com/-zlLHls3dddeyWeMxuhsYcZsZ3TAf3x0DBPCPQUDKh9UYwqk0ZWCESppDyk6ImSWOkw2HSz_mMku3ifTrdft8UQdOwGguqZpIojH7I_-3wTV9TuW5G-Yu8CiJKC0wB_2x53tdrGxJQ=w2400' style="width: 600px;"/></center>
+        <br>
+        <p>
+                The example I have chosen is a user being unable to login to their account. It’s a simple problem but it can cause a large 
+                amount of stress for our users, especially around exam release dates. The initial ticket simply stated that a user was unable 
+                to login, even though there were no mistakes with their credentials. 
+        </p>
+        <br>
+        <center><img src='https://lh3.googleusercontent.com/f02z4QYHWdEgVIDXeAG__2d83An_2ko0aAH5L5I-q5IuD7Vc-4lc7_V0hstCdZDSuLpVWCwdURcuf-mOYdKdcy_-AH-8PxoJvkc6wouN5nAjpoLbwqo6Sp0H1OSnSj1GKepTQXLwzw=w2400' style="width: 800px;height: 400px;"></center>
+        <br>
+        <p>
+                I attempted to login on behalf of the user with our admin proxy ability and after some testing on my side of the application, 
+                I discovered that the user had duplicate accounts.
+        </p>
+        <br>
+        <center><img src='https://lh3.googleusercontent.com/eoxAV8zDzKPiLz_zDLjZe-9zKUnOsBH7xg4NrGg43P_cIDdnO2NXa5jQMQZBgHtyYnQeDjJxvFoMVnbBVY-zuhjJn0Z-knWR0Cdb9w4acpQvu6EILT-NuA4kZ3XZ3H7WWv2LWHblyA=w2400' style="width: 800px;"/></center>
+        <br>
+        <p>
+                After confirming the duplicate email in our database, I updated the error ticket and notified my superiors. The system had 
+                saved two instances of the single user with two separate email addresses, and this caused the database to set them both as 
+                active, then the system locked as it can’t distinguish which account it should use. I made a simple SQL query to find all 
+                registered users with duplicate emails and grouped them together so I could find the one I was looking for.
+        </p>
+        <br>
+        <center><img src='https://lh3.googleusercontent.com/tRH9cDepAFcxGUMSkj4AW8fgFp9S05rDj_aCCjT3NiIoujwVdIffl7Uc7HStiHoempX4rp8LbuNRLbG07D8F8TyEXIf1C7cgTyFKvjyKHmzf6HHvEQF-2jNpjKARuMP3wc4wmfMNoA=w2400'style="width: 800px; height: 400px;" /></center>
+        <br>
+        <p>
+                The old pro and cold fusion systems allowed duplicate emails to be used, but the new system restricts access if it occurs. 
+                This was an unforeseen oversight from previous iterations and was an uncommon, but never the less disruptive issue. I notified 
+                the user about what happened and confirmed that multiple emails were entered when they were first registering. I deactivated 
+                the duplicate and made sure the other remaining account granted access to the site. I documented the error for future reference 
+                and I closed the ticket due to everything being resolved. 
+        </p>
+        <br>
+        <br>
+        <br>
 </body>
 </div>
 </html>
