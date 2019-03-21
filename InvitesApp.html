@@ -1,0 +1,95 @@
+<!DOCtype html>
+<html>
+   <head><link rel=stylesheet  type=text/css href=PortfolioStyleSheet.css></head>
+
+   <ul id="nav">
+      <li><a href="HomePage.html">Home</a></li>
+      <li>
+         <a class="hsubs" href="#">Project Pages</a>
+         <ul class="subs">
+            <li><a href="Markdown.html">Markdown Session</a></li>
+            <li><a href="OutOfOffice.html">Out Of Office</a></li>
+            <li><a href="ServiceNow.html">Service Now</a></li>
+            <li><a href="InvitesApp.html">Invites App</a></li>
+         </ul>
+   </ul>
+   </div>
+
+   <div class="centered">
+     <img src="https://cdn.dribbble.com/users/1003944/screenshots/3065940/_free_set__18_animated_icons.gif" class="image2" title="source: imgur.com"alt="Avatar"></a>
+   </div>
+   <center><h1>Invites App</h1></center>
+   <div class="content">
+      <body>
+         <p>     
+                Another recent application that I have been working on is called FDW (Finance in the Digital World). The brief for this project 
+                was to create an application where non-members could be sent a link to access specific services on our website, that are normally 
+                paid for. Third party companies could then purchase links for their workers, so that they could utilise our services and increase 
+                their knowledge. 
+         </p>
+         <p>
+                ICAEW have customers that pay a subscription to become members and they already have login details to access all of the services 
+                we provide. If a link was redeemed by an individual but they were already a registered member with our company, they would simply 
+                login using their credential. This would then in turn not redeem the link as they are only spent when a user is not currently a 
+                paying member. 
+         </p>
+         <p>
+                The initial planning phase for this project was much less formal than my previous out of office application as Invites was a much 
+                smaller task. A short meeting was called where myself and two other developers were given the brief and we discussed what we thought 
+                the best approaches would be. Epics and stories were created for the main sections of the application, along with the tasks and time 
+                to complete them. Work was divided up amongst the different members of the team and I put myself forward to work more on the back-end 
+                sections. I wanted to gain more experience working with the data and the service clients and I thought this would be a great 
+                opportunity for me. 
+         </p>
+
+         <p>The Project team consists of:</p>
+         <ul>
+         <li id="list">1 Product Owner</li>
+         <li id="list">1 Project Manager</li>
+         <li id="list">1 Scrum Master</li>
+         <li id="list">3 Developers - My Role</li>
+         <li id="list">2 Testers</li>
+         </ul>
+         <p>
+                I took on the task of allowing the application administrators to create guids. A guid is a Globally Unique Identifier and the format 
+                is a well-defined sequence of 32 hex digits grouped into chunks of 8-4-4-4-12.
+         </p>
+         <p> Here is an example of a guid - <span style="color: red;">F6CD405A-0A3C-4AA6-86CB-2F38656D4825</span>. 
+                It is sent to users within a link that gives them access to our website. Without it the website will lock and ask the user to enter one. 
+                This secures our site because even with this unique code, they will still be asked to register with us or enter their 
+                credentials if they are already a member. So, there is no possibility of an external user gaining access without being invited by us. 
+         </p>
+         <p>  
+                The first steps were similar to the out of office application where I created tables and CRUD stored procedures for the invites and invite 
+                profiles. This included information such as <span style="color: red;">“Invite Profile Id”, “Max Uses”, “Current Uses”, “Reference Guid” 
+                and “Expiry Date”</span>.  
+         </p>
+
+         <p>
+         My next task was to read the remaining uses for a guid and output that data as a bar with a percentage. I linked the View Model with the 
+         entities from the Invites application so I would have access to the data. Then I created this action result to read the data and return 
+         it to the view.
+        </p> 
+        <center><img src='https://lh3.googleusercontent.com/qAZysoYXnatGjOwYjcdNN3LRDcTVblEy5cAzoKFwiR1utQhKYsPO8d5NNEYSKSRSDKBvhFWBzOLLrwKho9EJnspI_HqhUy5LHUU8UstXdPN2RdHlKr87HnIrI7hOR1CcENdKe3gLQA=w2400' style="width: 800px;height: 400px;"/></center>
+      <p>
+            Once I had the data in the model, I parsed it into the view and created this foreach loop so that I could step through each guid and 
+            work with the values. In this case the values from <span style="color: red;">“Max Uses”</span> and <span style="color: red;">“Number 
+            Used”</span>. As long as Max Uses was more than zero the code would run and perform the calculation to read out the values as a percentage. 
+      </p>
+      <center><img src='https://lh3.googleusercontent.com/RoB6D9CLMXldy5tcy0uB1_5wwEjp90ldYDJwRa4F1J0kJiY-Qgmo-FXAj-Y1t4quGIlGNnHbP8DFg39_L4dAzpjdPpwe0f1IDdWLjV7lGoG2lB6qxZjxQir55ARUrEyLkYPcr4jHhQ=w2400' style="width: 800px; height: 400px;"/></center>
+   <p>
+        This code also checked whether a guid was active or not to reveal which ones were no longer redeemable. I included this feature to show when the 
+        maximum number had been reached but also to provide administrators with the ability to deactivate guids if there were any underlying issues with them 
+        in future. Pictured below is the finished view with all of the bars and CSS applied effectively.
+   </p>
+<center><img src='https://lh3.googleusercontent.com/b9DRDAlKg25lSbN-trlAedL671qcgON9SLAMsye9EPgkFOyaN_kjJLbs0bhngRsnfMOh0Uvajkba85MckftuDwK4L4jFEOpxSNFx2y5Y9lWg9GiPxEnoTCZ53q9W-0HydRlHjdgsew=w2400' /></center>
+<p>
+        Here is also the view I made to allow administrators the ability to create new guids and set the maximum values.
+</p>
+<center><img src='https://lh3.googleusercontent.com/sD6qm3b_IrkGM70mUxP5Gylq0hZG3L1KJbScggvsz4mMNv5aQB2p8UipF8gjZZUBkOYEkyF9py0DCIhRVVRHhegLkNbwWrk05NSq5RzEvhIdBLjDHaGwkL4wtdeRT3aoOZjoyVXqiA=w2400' /></center>
+<br>
+<br>
+<br>
+    </body>
+   </div>
+</html>
