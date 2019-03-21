@@ -13,28 +13,44 @@ body{
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
 }
 
-div.extraCentered {
-        height: 10em;
-        position: relative }
-        div.extraCentered {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) }
+.indexContent {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.extraCentered 
+{
+    height: 10em;
+    position:absolute;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
         
+#list
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font: 20px Helvetica, serif;
+    font-style: italic;
+}
 
 p{
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 15px;
     padding-bottom: 15px;
     color: white;
     font: 20px Helvetica, serif;
+    line-height: 1.6;
 }
 h1{
     font: 60px Helvetica, serif;
@@ -48,11 +64,11 @@ h2{
 }
 
 .image1{
-    margin-top: 55px;
+    margin-top: 10px;
     height: 220px;
     width: 220px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid grey;
     transition: transform .2s;
   }
 
@@ -63,21 +79,21 @@ h2{
   }
 
 .image2 {
-    margin-top: 100px;
+    margin-top: 60px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
     margin-left: 20%;
-    border: 2px solid red;
+    border: 2px solid grey;
   }
   
   .image3{
-    margin-top: 55px;
+    margin-top: 10px;
     margin-left: 70px;
     height: 220px;
     width: 220px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid grey;
     transition: transform .2s;
   }
 
@@ -85,6 +101,14 @@ h2{
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+  }
+
+  .image4{
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid grey;
   }
 
   img{
@@ -119,7 +143,7 @@ button:hover {
     padding:  20px 0 15px 50px;
     position: relative;
     border-radius: 25px;
-    box-shadow: 8px 5px 4px rgba(250, 1, 1, 0.7);
+    box-shadow: 8px 5px 4px rgba(255, 253, 253, 0.7);
     }
 
 #nav ul {
@@ -184,11 +208,11 @@ button:hover {
 }
 #nav ul li {
     background: none;
-    width: 100%;
+    width: 90%;
 }
 #nav ul li a {
     float: none;
-    background-color: rgba(165, 164, 164, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
     border-radius: 25px;
 }
 #nav ul li:hover > a {
