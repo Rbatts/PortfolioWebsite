@@ -1,95 +1,232 @@
 <!DOCtype html>
 <html>
-   <head><link rel=stylesheet  type=text/css href=PortfolioStyleSheet.css></head>
 
-   <ul id="nav">
-      <li><a href="HomePage.html">Home</a></li>
-      <li>
-         <a class="hsubs" href="#">Project Pages</a>
-         <ul class="subs">
-            <li><a href="Markdown.html">Markdown Session</a></li>
+<head>
+    <link rel=stylesheet type=text/css href=PortfolioStyleSheet.css>
+</head>
+
+<ul id="nav">
+    <li><a href="HomePage.html">Home</a></li>
+    <li>
+        <a class="hsubs" href="#">Project Pages</a>
+        <ul class="subs">
             <li><a href="OutOfOffice.html">Out Of Office</a></li>
-            <li><a href="ServiceNow.html">Service Now</a></li>
+            <li><a href="Markdown.html">Markdown Session</a></li>
             <li><a href="InvitesApp.html">Invites App</a></li>
-         </ul>
-   </ul>
-   </div>
+            <li><a href="ServiceNow.html">Service Now</a></li>
+        </ul>
+</ul>
+</div>
 
-   <div class="centered">
-     <img src="https://cdn.dribbble.com/users/1003944/screenshots/3065940/_free_set__18_animated_icons.gif" class="image2" title="source: imgur.com"alt="Avatar"></a>
-   </div>
-   <center><h1>Invites App</h1></center>
-   <div class="content">
-      <body>
-         <p>     
-                Another recent application that I have been working on is called FDW (Finance in the Digital World). The brief for this project 
-                was to create an application where non-members could be sent a link to access specific services on our website, that are normally 
-                paid for. Third party companies could then purchase links for their workers, so that they could utilise our services and increase 
-                their knowledge. 
-         </p>
-         <p>
-                ICAEW have customers that pay a subscription to become members and they already have login details to access all of the services 
-                we provide. If a link was redeemed by an individual but they were already a registered member with our company, they would simply 
-                login using their credential. This would then in turn not redeem the link as they are only spent when a user is not currently a 
-                paying member. 
-         </p>
-         <p>
-                The initial planning phase for this project was much less formal than my previous out of office application as Invites was a much 
-                smaller task. A short meeting was called where myself and two other developers were given the brief and we discussed what we thought 
-                the best approaches would be. Epics and stories were created for the main sections of the application, along with the tasks and time 
-                to complete them. Work was divided up amongst the different members of the team and I put myself forward to work more on the back-end 
-                sections. I wanted to gain more experience working with the data and the service clients and I thought this would be a great 
-                opportunity for me. 
-         </p>
+<div class="centered">
+    <img src="https://cdn.dribbble.com/users/1003944/screenshots/3065940/_free_set__18_animated_icons.gif" class="image2"
+        title="source: imgur.com" alt="Avatar"></a>
+</div>
+<center>
+    <h1>Invites App</h1>
+</center>
+<div class="content">
 
-         <p>The Project team consists of:</p>
-         <ul>
-         <li id="list">1 Product Owner</li>
-         <li id="list">1 Project Manager</li>
-         <li id="list">1 Scrum Master</li>
-         <li id="list">3 Developers - My Role</li>
-         <li id="list">2 Testers</li>
-         </ul>
-         <p>
-                I took on the task of allowing the application administrators to create guids. A guid is a Globally Unique Identifier and the format 
-                is a well-defined sequence of 32 hex digits grouped into chunks of 8-4-4-4-12.
-         </p>
-         <p> Here is an example of a guid - <span style="color: red;">F6CD405A-0A3C-4AA6-86CB-2F38656D4825</span>. 
-                It is sent to users within a link that gives them access to our website. Without it the website will lock and ask the user to enter one. 
-                This secures our site because even with this unique code, they will still be asked to register with us or enter their 
-                credentials if they are already a member. So, there is no possibility of an external user gaining access without being invited by us. 
-         </p>
-         <p>  
-                The first steps were similar to the out of office application where I created tables and CRUD stored procedures for the invites and invite 
-                profiles. This included information such as <span style="color: red;">“Invite Profile Id”, “Max Uses”, “Current Uses”, “Reference Guid” 
-                and “Expiry Date”</span>.  
-         </p>
+    <body>
+        <p>
+            Another recent application that I have been working on is called FDW (Finance in the Digital World). The
+            brief for this project was to create an application where non-members could be sent a link to access
+            specific services on our website, that are normally paid for. Third party companies could then purchase
+            links for their workers, so that they could utilise our services and increase their knowledge.
+        </p>
+        <p>
+            ICAEW have customers that pay a subscription to become members and they already have login details to
+            access all of the services we provide. If a link was redeemed by an individual but they were already a
+            registered member with our company, they would simply login using their credential. This would then in turn
+            not redeem the link as they are only spent when a user is not currently a paying member.
+        </p>
+        <p>
+            The initial planning phase for this project was much less formal than my previous out of office application
+            as Invites was a much smaller task. A short meeting was called where myself and two other developers were
+            given the brief and we discussed what we thought the best approaches would be. Epics and stories were
+            created for the main sections of the application, along with the tasks and time to complete them. Work was
+            divided up amongst the different members of the team and I put myself forward to work more on the back-end
+            sections. I wanted to gain more experience working with the data and the service clients and I thought this
+            would be a great opportunity for me.
+        </p>
 
-         <p>
-         My next task was to read the remaining uses for a guid and output that data as a bar with a percentage. I linked the View Model with the 
-         entities from the Invites application so I would have access to the data. Then I created this action result to read the data and return 
-         it to the view.
-        </p> 
-        <center><img src='https://lh3.googleusercontent.com/qAZysoYXnatGjOwYjcdNN3LRDcTVblEy5cAzoKFwiR1utQhKYsPO8d5NNEYSKSRSDKBvhFWBzOLLrwKho9EJnspI_HqhUy5LHUU8UstXdPN2RdHlKr87HnIrI7hOR1CcENdKe3gLQA=w2400' style="width: 800px;height: 400px;"/></center>
-      <p>
-            Once I had the data in the model, I parsed it into the view and created this foreach loop so that I could step through each guid and 
-            work with the values. In this case the values from <span style="color: red;">“Max Uses”</span> and <span style="color: red;">“Number 
-            Used”</span>. As long as Max Uses was more than zero the code would run and perform the calculation to read out the values as a percentage. 
-      </p>
-      <center><img src='https://lh3.googleusercontent.com/RoB6D9CLMXldy5tcy0uB1_5wwEjp90ldYDJwRa4F1J0kJiY-Qgmo-FXAj-Y1t4quGIlGNnHbP8DFg39_L4dAzpjdPpwe0f1IDdWLjV7lGoG2lB6qxZjxQir55ARUrEyLkYPcr4jHhQ=w2400' style="width: 800px; height: 400px;"/></center>
-   <p>
-        This code also checked whether a guid was active or not to reveal which ones were no longer redeemable. I included this feature to show when the 
-        maximum number had been reached but also to provide administrators with the ability to deactivate guids if there were any underlying issues with them 
-        in future. Pictured below is the finished view with all of the bars and CSS applied effectively.
-   </p>
-<center><img src='https://lh3.googleusercontent.com/b9DRDAlKg25lSbN-trlAedL671qcgON9SLAMsye9EPgkFOyaN_kjJLbs0bhngRsnfMOh0Uvajkba85MckftuDwK4L4jFEOpxSNFx2y5Y9lWg9GiPxEnoTCZ53q9W-0HydRlHjdgsew=w2400' /></center>
-<p>
-        Here is also the view I made to allow administrators the ability to create new guids and set the maximum values.
-</p>
-<center><img src='https://lh3.googleusercontent.com/sD6qm3b_IrkGM70mUxP5Gylq0hZG3L1KJbScggvsz4mMNv5aQB2p8UipF8gjZZUBkOYEkyF9py0DCIhRVVRHhegLkNbwWrk05NSq5RzEvhIdBLjDHaGwkL4wtdeRT3aoOZjoyVXqiA=w2400' /></center>
-<br>
-<br>
-<br>
+        <p>The Project team consists of:</p>
+        <ul>
+            <li id="list">1 Product Owner</li>
+            <li id="list">1 Project Manager</li>
+            <li id="list">1 Scrum Master</li>
+            <li id="list">3 Developers - My Role</li>
+            <li id="list">2 Testers</li>
+        </ul>
+        <p>
+            I took on the task of allowing the application administrators to create guids. A guid is a Globally Unique
+            Identifier and the format is a well-defined sequence of 32 hex digits grouped into chunks of 8-4-4-4-12.
+        </p>
+        <p> Here is an example of a guid - <span style="color: red;">F6CD405A-0A3C-4AA6-86CB-2F38656D4825</span>.
+            It is sent to users within a link that gives them access to our website. Without it the website will lock
+            and ask the user to enter one.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/ppo5bQAlzoWYVWhUnR0tRmeQykuFta3u0p3odCwQU782t-ijrwIorptvaKCZWnyvvGkJwBXEojD6Z0C1WM-NI-tPw4SzwFm0PLSm-UPMZ8AnegLPeNaOdJeu-CGDBjWB0Fuw4GeiIQ=w2400'
+                style="Height:400px; width:800px;" /></center>
+        <p>
+
+            This secures our site because even with this unique code, they will still be asked to register with us or
+            enter their credentials if they are already a member. So, there is no possibility of an external user
+            gaining access without being invited by us.
+
+        </p>
+        <p>
+            The first steps were similar to the out of office application where I created tables and CRUD stored
+            procedures for the invites and invite profiles. This included information such as <span style="color: red;">“Invite
+                Profile Id”, “Max Uses”, “Current Uses”, “Reference Guid” and “Expiry Date”</span>.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/ruhpiFZTR7p-xiA6wSkovHMZRzFF9eAYSjMxX_hTFW0U5LK-n1ycViN30kZtJjJi0jb6aVwpVsdTyRNnnkdIcI7Nti1jqivyP7-IDLQSqiRPQAFnCFHYiI-Os3royedWV9XH2uW95Q=w2400'
+                style="Height:600px; Width: 500px;" /></center>
+        <p>I pointed the application to the database using the connection strings and made sure things were returning
+            by running the read all methods.</p>
+        <center><img src='https://lh3.googleusercontent.com/EcSYeZ7CZnndTHzM0TBjnGF65yxkXWBgBBqKYFd514xX_PJ_F87q-vaXUFrhrLYz1RSGrKbgbjrR2kUSfqQA80Gp1JFG39S7KUgItr9wFWvdK69R3PwmE_y_ozwi76t49eqGPLChUw=w2400'
+                style="Height:600px; Width: 700px;" /></center>
+        <p>
+            The connection string is specified in the base repository for both the command and query sections. This is
+            then referenced to the configuration file held within the service to direct it to look in the right area
+            and reduce data conflict. To ensure that it's all secure and passwords are not accidentally pushed to the
+            source control, variable names are used and then substituted during the configuration build process when
+            deploying to other environments.
+        </p>
+        <p>
+            My next task was to read the remaining uses for a guid and output that data as a bar with a percentage. I
+            linked the View Model with the entities from the Invites application, so I would have access to the data.
+            Then I created this action result to read the data and return it to the view.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/qAZysoYXnatGjOwYjcdNN3LRDcTVblEy5cAzoKFwiR1utQhKYsPO8d5NNEYSKSRSDKBvhFWBzOLLrwKho9EJnspI_HqhUy5LHUU8UstXdPN2RdHlKr87HnIrI7hOR1CcENdKe3gLQA=w2400'
+                style="width: 800px;height: 400px;" /></center>
+        <p>
+            Once I had the data in the model, I parsed it into the view and created this foreach loop, so that I could
+            step through each guid and work with the values. In this case the values from “Max Uses” and “Number Used”.
+            As long as Max Uses was more than zero the code would run and perform the calculation to read out the
+            values as a percentage.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/RoB6D9CLMXldy5tcy0uB1_5wwEjp90ldYDJwRa4F1J0kJiY-Qgmo-FXAj-Y1t4quGIlGNnHbP8DFg39_L4dAzpjdPpwe0f1IDdWLjV7lGoG2lB6qxZjxQir55ARUrEyLkYPcr4jHhQ=w2400'
+                style="width: 800px; height: 400px;" /></center>
+        <p>
+            This code also checked whether a guid was active or not to reveal which ones were no longer redeemable. I
+            included this feature to show when the maximum number had been reached but also to provide administrators
+            with the ability to deactivate guids, if there were any underlying issues with them in future. Pictured
+            below is the finished view with all of the bars and CSS applied effectively.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/b9DRDAlKg25lSbN-trlAedL671qcgON9SLAMsye9EPgkFOyaN_kjJLbs0bhngRsnfMOh0Uvajkba85MckftuDwK4L4jFEOpxSNFx2y5Y9lWg9GiPxEnoTCZ53q9W-0HydRlHjdgsew=w2400' /></center>
+        <p>
+            Here is also the view I made to allow administrators the ability to create new guids and set the maximum
+            values. This is the end product and allows the company to successfully distribute invites to paying
+            customers who wish to use our services.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/sD6qm3b_IrkGM70mUxP5Gylq0hZG3L1KJbScggvsz4mMNv5aQB2p8UipF8gjZZUBkOYEkyF9py0DCIhRVVRHhegLkNbwWrk05NSq5RzEvhIdBLjDHaGwkL4wtdeRT3aoOZjoyVXqiA=w2400' /></center>
+        <p>
+            After the views were completed and polished, I ran the code and noticed that the guids were not saving to
+            the database. I set some breakpoints within the code and I found that the created date was automatically
+            set as “/00/00/0001” by visual studio, which caused the failure. You can see the break point int the code
+            below and the information that was captured within the model variable.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/leTc7tRLmBmpLaCBE36xJiYOtsP3RTOoflHaYFXZcjU9QtDc0LSCK5wHiEhkpBEPWUOrG-8mxlL1l_7o-6Da6UsWB8d7U07rJFj9kX_SocMUIjQQKIGbv7pMWbzwQPF-zBlaAgh9yg=w2400' /></center>
+        <p>
+            The SQL databases will refuse to accept any date before January 1st 1753. To solve this, I took the current
+            date and time from when the creation occurred and captured it. Whilst I was correcting this error, I also
+            added the “Created By” field and made it populate with whoever was logged in at that time. This helped with
+            traceability as I can view when the invite was created and who by. I also then added a year onto the
+            current date to set a standard expire time for the invite.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/iHEi-0x3Msim5uQWwVe4rcPLFM5Vc9gt75bB32ETOQVaikmmGaY8noaE5ae9Adcb6xEv0vt0JKKvs-KInePo5IXgyd47jAaaPtJnAPP0Pu21Nv3smFr-C89B0E1dcXO8E8l-VTa4VQ=w2400' /></center>
+        <p>
+
+            As you can see in the picture below, invites now successfully saved with all the correct information and
+            the expiry date of 2020 reveals the extra year applied correctly.
+
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/bCcbL8r_K1DjMeCU1z8L0p7Ax0P3TR6UBmy0ifGkY7CnY7ceTtg1wzM-Tmi6wM6TQUYLuFpRuFPFBOXaeSENxDNu_Fl5e12rw6f_qHDRUM4t_Pt01Mt8CIQpHRmCxGe_AZ_4lD_t_A=w2400' /></center>
+        <p>
+
+            When I demonstrated the functionality of my progress to the team in our retrospective meeting, my superiors
+            and product owner gave me some feedback. They noted how the invites application will be expanded in future
+            to include access to more areas than just FDW (Finance in the Digital World). They asked me to include
+            extra functionality to allow administrators to customise the area of our website they wish to give users
+            access to. The Invite Profile Id was required to achieve this because the Id represents the different
+            areas, they wanted to grant access to.
+
+        </p>
+        To achieve this, I used the HTTP GET method for “Create”, which pulls in the information from the database and
+        parses it into the model. I did this to create a drop-down menu that users could select the area they required.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/IPE1_Sxan126Vfql8AgfrWuSHC6LNlevnpPHjOs-j76pNWz1OVWmWABfmNjfCQ9f9o3RluuKnUmcIyqLnh6iHbqqfSnMxXmuy1cb1ivsUeqr90l78jnSy8XVPxoSCmpsePKqr0fSww=w2400'
+                style="Height:400px;" /></center>
+        <p>
+            The code below is the finished HTML code for the drop-down menu.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/2ULxEbFdFwlOgxLl8xF_CC_rNMxWpm-A5Z61MEztcXAkAXFF44QWLdwtqw2uti8-s3gdteL2Tb8oBwER4xC-FMf6JDhMV2PLkricVlBg7YPJl8xa4nEieZYeBAWfno0S9XrGOSiN9w=w2400'
+                style="Height:300px;" /></center>
+        <p>Just as I did with the previous information when setting up the guid percentage bars; I parsed the
+            information from the model into the view using the MVC HTML helper.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/Wm4BYF99tC583S8KlE8qYr3OTiU2JRQUrqGD7Q7gnVX00NsQbLYIBbb6D_5kkrJRGy3gG7A-fGha__MgvkH8bqn0V35y1owzodVcYbbT6jLcNMacgkjdD_0omttPY6yaVmZmXjJuyg=w2400'
+                style="Height:650px;" /></center>
+        <p>
+            Administrators that access our website might not necessarily know what a guid is, so I decided to rename it
+            as “Link Reference” to make it easier to understand. I added the Link Reference on the page so
+            administrators could view it before the creation was finalized. I then had to make the Link Reference read
+            only so no one couldn’t insert an incorrect Link Reference. I also did this because if the security was
+            every compromised, a hacker would be unable to insert any dangerous queries that could steal data or damage
+            our database.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/k6T8WLT8p9j3PIiZSUBegzDkkSYUeeatKkVqbFp8TPS3wkjx-2rI9q3KznyhL_gPHhCix4Wzps4jDYxCksTdu_BMgQdUej5nbi70S_Gxw-DMrOb9VM3NpEqME_Xjam2y44YUCJDVBA=w2400' style="height: 300px;"/></center>
+        <p>
+            A tester came back to me and highlighted that a date in the past could be entered for the expiry date
+            manually and this was an error to be resolved. I went into the code and set the minimum expiry date to be
+            at least a day added onto the current date. This fixed the issue and wasn’t too complicated but the only
+            other errors were superficial, or simply cosmetic and didn’t require much time to change either.
+        </p>
+        <p>
+            After the suggested changes were implemented, I showed the team my work and they were very happy with the
+            results. I sent my code off for a review and received confirmation that my changes were acceptable and
+            would not cause any fatal errors within the system. Also, that the work conformed to the company’s
+            standards and best practices.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/Ig510XvXA0UkUw2EI3lnpxicNNk8czPDdB7TdTLe2nT7fu9DmNMYO8P5IPj9xI7Fk_rZc5X-hCke5gX3-PWt0ZnGy1QNGsFGQR0Gjhb4A3h4hr11uy-C0RsiVE7xFyNE0Rm-s-nfeg=w2400'
+                style="Height:650px;" /></center>
+        <p>
+            The team uses a continuous integration build that is setup to automatically check the code is valid and
+            working according to our unit tests. This is triggered as soon as I checked in my changes and submitted my
+            work, which is only allowed once a review has been approved.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/0KE2WiuNJ4vM0qQjLyD4fajr4s6LIRgocHFHHgoRBWaST2v_lVBF4Iv4bGKOhnWNvR_OcEsQSkO5iPUdTEdIf3RISNDK8ND0Iwc8cjIhSG-S6Zv_N3YFPJXE9Gmp7vVJ_ZSAKJcmFA=w2400'
+                style="Height:650px; width: 800px;;" /></center>
+        <p>
+            Finally, I deployed my code to the development branch and made sure everything built correctly and there
+            weren’t any errors flagged. We could then access the site by using our url //devcloudadmin.icaew.com and
+            the finished code all ran perfectly. Here is a final product with our new invites link added onto the live
+            admin page.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/VFr8zBFwD8-kKlOpEGsU_f5cUc3PauXHRoZX1ZTfdUcYUlf8hIMhQUYOkZyi41_jonCpMnZ_OPjcQ7zVn5iWHy_IZ66PETolX05xHJ0SHRwjoTMnQZGBXIncSxaRmesKInd483RZcQ=w2400' /></center>
+        <center>
+            <p style="font-size: 30px">Conclusion</p>
+        </center>
+        <p>
+            I again learned quite a large amount about the subtleties of software development on this project. The app
+            was smaller than others I have worked on, never the less I had to create databases, tables and everything
+            else much larger apps require. I worked more independently on the back-end work and faced many challenges
+            when trying to connect the services and other apps. The out of office project is a single piece of work
+            that only relies on a separate security application. Whereas invites has administrator functionality, so it
+            had to be connected and linked with the admin solution which is a live and important system. If it was
+            broken or compromised it would have affected the business and cost the company money, so it felt like there
+            was more pressure not to make any mistakes on this work. I completed the majority of my tasks and only
+            missed one to do with a description box that we were unable to implement to time constraints. The testers
+            needed the application to be pushed to their test environment to complete all of the high-volume user
+            testing before their own deadline. If I had more time, I would have liked to made the edit buttons the red
+            boxes that the company likes to use and included another column with the expiry date on the landing page.
+        </p>
+
+        <br>
+        <br>
+        <br>
     </body>
-   </div>
+</div>
+
 </html>
