@@ -1,307 +1,447 @@
 <!DOCtype html>
 <html>
-   <head><link rel=stylesheet  type=text/css href=PortfolioStyleSheet.css></head>
 
-   <ul id="nav">
-            <li><a href="HomePage.html">Home</a></li>
-            <li><a class="hsubs" href="#">Project Pages</a>
-                <ul class="subs">
-                        <li><a href="Markdown.html">Markdown Session</a></li>
-                        <li><a href="OutOfOffice.html">Out Of Office</a></li>
-                        <li><a href="ServiceNow.html">Service Now</a></li>
-                        <li><a href="InvitesApp.html">Invites App</a></li>
-                </ul>
-   </ul>
-   </div>
+<head>
+    <link rel=stylesheet type=text/css href=PortfolioStyleSheet.css>
+</head>
 
-   <div class="centered">
-     <img src="https://i.imgur.com/si1occV.png?1" class="image2" title="source: imgur.com"alt="Avatar">
-   </div>
-   <center><h1>The Out of Office Application</h1></center>
-   <div class="content">
+<ul id="nav">
+    <li><a href="HomePage.html">Home</a></li>
+    <li><a class="hsubs" href="#">Project Pages</a>
+        <ul class="subs">
+                <li><a href="OutOfOffice.html">Out Of Office</a></li>
+                <li><a href="Markdown.html">Markdown Session</a></li>
+                <li><a href="InvitesApp.html">Invites App</a></li>
+                <li><a href="ServiceNow.html">Service Now</a></li>
+            </ul>
+</ul>
+</div>
+
+<div class="centered">
+    <img src="https://i.imgur.com/si1occV.png?1" class="image2" title="source: imgur.com" alt="Avatar">
+</div>
+<center>
+    <h1>The Out of Office Application</h1>
+</center>
+<div class="content">
+
     <body>
-            <center><p style="font-size: 30px">Introduction</p></center>
-            <p> 
-                At ICAEW managers and employees were wasting time in their day trying to find people who may not even be working that day. 
-                There was no clear uniform way to quickly track if an employee was absent, on holiday, training or working from home. This 
-                created confusion and wasted precious time that could have been better spent on projects that were of a high priority. 
-                Myself and another apprentice were tasked with completing an Out of Office application to solve this problem. It was our 
-                first company project and we would have to plan, design, develop and maintain the application ourselves.
-                
-            </p>
+        <center>
+            <p style="font-size: 30px">Introduction</p>
+        </center>
+        <p>
+            At ICAEW managers and employees were wasting time in their day trying to find people who may not even be
+            working that day. There was no clear uniform way to quickly track if an employee was absent, on holiday,
+            training or working from home. This created confusion and wasted precious time that could have been better
+            spent on projects that were of a high priority. Myself and another apprentice were tasked with completing
+            an Out of Office application to solve this problem. It was our first company project and we would have to
+            plan, design, develop and maintain the application ourselves.
 
-            <p>The Project team consists of:</p>
-            <ul>
+        </p>
+
+        <p>The Project team consists of:</p>
+        <ul>
             <li id="list">1 Product Owner</li>
             <ul>
-            <li id="list">Has a vision of what he or she wishes to build, and conveys that vision to the scrum team.</li>
+                <li id="list">Has a vision of what he or she wishes to build, and conveys that vision to the scrum
+                    team.</li>
             </ul>
             <li id="list">1 Project Manager</li>
             <ul>
-            <li id="list">The project management role is one that is designed to help ensure that the software development process works
-                as it is intended.</li>
+                <li id="list">The project management role is one that is designed to help ensure that the software
+                    development process works
+                    as it is intended.</li>
             </ul>
             <li id="list">1 Scrum Master</li>
             <ul>
-            <li id="list">Manages how information is exchanged, runs the team and helps clear any blocked tasks.</li>
+                <li id="list">Manages how information is exchanged, runs the team and helps clear any blocked tasks.</li>
             </ul>
             <li id="list">2 Developers - My Role</li>
             <ul>
-            <li id="list">Codes the application to the specifications of the designs and clients requirements. Upon completion of work,
-                maintain the site and fix bugs for the until the app is discontinued.</li>
+                <li id="list">Codes the application to the specifications of the designs and clients requirements. Upon
+                    completion of work,
+                    maintain the site and fix bugs for the until the app is discontinued.</li>
             </ul>
             <li id="list">2 Testers</li>
             <ul>
-            <li id="list">Testing the application once it has been completed to find bugs and flag them up to the developers.</li>
+                <li id="list">Testing the application once it has been completed to find bugs and flag them up to the
+                    developers.</li>
             </ul>
-            </ul>
+        </ul>
 
-            <center><p style="font-size: 30px">Planning and Requirement Analysis</p></center>
-            <p> I found this phase very interesting as it allowed me to gain insight into the inner workings of the company and exposed 
-                me to the software development lifecycle. Myself and another apprentice began by meeting with the product owner and informed 
-                about our developer roles on the project. The high concept problems were presented to us and together we asked questions to 
-                better understand what the client wanted. I began with enquiring about the app functionality and what data we would need to 
-                collect from users. The client wanted users to be able to book holiday and anything relating to being out of the office 
-                through the app, as well as letting other users see which of their co-workers was absent. After our initial enquiries we 
-                agreed that we would need to have a login system, employee tracking, users grouped by their current work teams and approvers 
-                to validate any time off requested. 
-            </p> 
-            <center><img src='https://lh3.googleusercontent.com/oQwTgFDWucEH0ettKepIdkhfCYFxHVcLHwi6HleUEeaSKW62Uy6mZmUCDXdZXE84e0vP0cKKKgWpvgHYA8wlZ0TsUnwPL4lQKoWC26ChOPLB1jE3F7Xk2MoCJNC73X0JWHzOetlrQw=w2400' /></center>
-            <center><p style="font-size: 30px">Defining Requirements</p></center>
-            <p> After all the meetings and conferring with the scrum master, we constructed a list of requirements that would serve as the 
-                scaffolding for our overall project. This included things such as “Access and Display” that focussed on the front end and 
-                initial login. The functionality of “Making Requests”, specifying how users can interact with the site through the UI, the 
-                varying amount of time they can book off and receiving automated emails. I also noted information that we collected for approvers, 
-                and what their abilities would be such as who can be an approver and selecting the different request types they can approve. We 
-                covered as much as possible with our documentation, to ensure that we produced the best possible product in an effective and 
-                inclusive way for everyone involved. Using the requirements, we created small easy to digest tasks that clearly reflected the work 
-                and the time required to complete them.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/G063pvux-tIfMyeB7f1Lj-2Pa1l14v4WZxT079TVBcQEriLG_jZOSXSD_EEEno_nJgA_RNCQh34R1X4nAc2Z9X8VbBsMTjvnl6Rw3QFJyfh5aYBmhJpWZjwOmzTMz5XSmjdMi3SpOw=w2400' style="width: 700px; height: 300px;"/></center>
-            <p>         
-            Together with our product owner we estimated that the work should be completed in four months. The third quarter of 2018 would be 
-            our deadline to create a fully functioning and tested application. These were my tasks for creating a meaningful dashboard. Most of 
-            these were primarily to do with HTML, Jquery and Fetching data.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/i8MJaJlbMOeWVictSUorTLADdgr0Kni4ClXvdihL1KtyLGmxWkSsjJPtBLfA4gfkQihmxGxQd3ux2T6AWGZJVJw8ZEnW57gvgGdpY7laNV0SJkUow3W1fLNA_nbK5APQAJLHZ2iFhQ=w2400' /></center>
-            <p>
-                    Throughout the project we used burndown graphs such as this one, to convey how much time had been lost due to uncompleted 
-                    tasks. This allowed us to have a clear visual representation of how well we were progressing, whilst creating an underline 
-                    sense of urgency to finish work in a timely manner. As you can see in this graph, we were on target but in the last few days 
-                    of that sprint some tasks were added. These tasks were tester related and were created to resolve raised bugs that I will 
-                    reference later on. 
-            </p>
-            <center><p style="font-size: 30px">Designing the Product Architecture</p></center>
-            <p> The next step was the Design phase where myself and the other apprentice worked on the basic flow and structure of the 
-                application. This allowed the team to collectively see how the app would work and what the happy uninterrupted paths were. 
-                The diagram below highlights all the key directions the user could potentially take when requesting time out of the office.
-            </p>
-            <br>
-            <center><img src='https://lh3.googleusercontent.com/QjADncksmVDpZgUL11KrHMoKGOFe0SKk9y7jljLiT9Rusc4EoSE9twBtE52bFH_3XNWcdhGdj1byd-fhhyV331TFQnYfaKkkh_kZLunp_hT3DZJYM_inmJ5hWMQlzGVMnLvQpR5HGQ=w2400' /></center>
-            <br>
 
-            <p>
-                    This highlighted what information we would need to collect from the user and helped us to create the tables and stored procedures 
-                    in our database. While providing the team with a clear visual representation of how the application will function at a basic level.
-            </p>
-            <p>
-                    I took on the tasks for the front end of the application, which was coded using HTML and Jquery. I began by designing the layout 
-                    of the landing page that users are initially directed to on paper. This included the style, colour coding, separation of events 
-                    and information to be included within those events. I highlighted how different requests will have statuses that indicate if they 
-                    are approved or waiting to be approved. I included clear indications If the event is a full day out of the office, AM or PM absence. 
-                    Even at this stage we were planning click functionality to allow users to right click on events and have a context menu for quick 
-                    tasks. This included going to the pending request page to see which events were yet to be approved and making a request directly on 
-                    the calendar, instead of going to fill out a request form on a different page. 
-                    
-            </p>
-            <br>
-            <center><img src='https://lh3.googleusercontent.com/_7LKKYYGge2IXHAuL-uFYaEpDIGFxgI2OU_6AEW6L14B8DnvitZdXHL8QWaj40k-pqapzJWYQYSktgJmp-TnB69PV8HEr9lEIaNKcuA9cjI7G-Jzuqp7NY3NiymaCqytldpa0lCqog=w2400' /></center>
-            <br>
-            <p> I presented this design to the product owner and the other developer and took on board the comments that they provided. It 
-                was decided to I added the standard company header and logo, then the contact page. Next the company CSS (Cascading Style Sheet)
-                was added; It is used on all the applications to reate a uniform brand. I included the functionality of switching between a day,
-                week and month view of the calendar. This is the layout that we elected to use:
-            </p>
-            <br>
-            <center><img src='https://lh3.googleusercontent.com/bK8jdpLLGF-9WQ60UBEuNktBQUozmzAFWWsi-aTpcw-xnIxMpUsfDOiTDaBPa7bDxCXPr8wQnvo8mBPOOv0OdgKbikM0CihiQOe5L_bmg_J4_SSlFoGtWgZLhv3DG8gCG6T5g1WZhw=w2400' /></center>
-            <br>
-            <p> When designing the app, we decided to split the users into their ICAEW teams because it would make the calendar less cluttered
-                and easier for their team leader to manage. Some employees within the company, have tasks that heavily rely on other workers 
-                before they can be completed. These uncompleted tasks can potentially cause bottlenecks and stall progress which costs us time 
-                and money. The most common of these bottlenecks come from waiting for testing, database issues and help desk tickets (Errors 
-                raised by users and employees). We recognised this and included the ability for a few select users to filter other teamscalendars,
-                as well as their own. After checking the calendar, users can see If any key employees are not available that sprint, and then 
-                decide which current tasks would take priority. Creating the functionality to allow the filtering of teams was not an easy task.
-                It proved to be quite a delicate problem because some users were technically part of two teams within the company. The coded logic
-                that filtered out individual teams created two instances of a single event because there was some overlap
-            </p>
-            <center><p style="font-size: 30px">Building or Developing the Product</p></center>
-            <p>
-                Database
-            </p>
-            <p>
-                    Myself and the other developer worked together to create the database for the application. We each chose the sections we would 
-                    create for our separate tasks; we regularly checked in with one another to ensure that our work was uniform and up to ICAEW 
-                    standards. With the information and notes I previously gathered from the happy path diagram, I created the table for the user’s 
-                    absence requests. This included selecting which fields could potentially be null (have no input data from the user) and which 
-                    fields must include input data.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/t5mwvQSpwoGNkKMN-TlgbH0Fb5mkXs-kFXLpMPJfaJU4S2jlh7gbD_6qu9QQchgLHuwRLFzs6pSESPRpC5ORpNEHnB1QWyIziuUWNQMmPEMREEWsUy4YSy2q5tVDp05Sb8KnaxGbAQ=w2400' style="height: 500px; width: 650px;"/></center>
-            <p>
-                    Once we had our tables, we created the CRUD stored procedures that would function as our way to populate the database with all 
-                    the required information from users.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/65DrvvRuRgQyWDpHAQcU0UQ-ROqyAlbuQH7_FW7gDQxHU1zal7rmyB1h8zBHpL9n7Q1XrWaQ8b22sGZxw7iOihzHqQK_gyOowL-Z0NrWwX6iRK5GssjTr8tBn__mMDzk2Dw4G2oiSg=w2400' /></center>
+        <center>
+            <p style="font-size: 30px">Planning and Requirement Analysis</p>
+        </center>
 
-            <ul>
+        <p> I found this phase very interesting as it allowed me to gain insight into the inner workings of the company
+            and exposed me to the software development lifecycle. Myself and another apprentice began by meeting with
+            the product owner and informed about our developer roles on the project. The high concept problems were
+            presented to us and together we asked questions to better understand what the client wanted. I began with
+            enquiring about the app functionality and what data we would need to collect from users. The client wanted
+            users to be able to book holiday and anything relating to being out of the office through the app, as well
+            as letting other users see which of their co-workers was absent. After our initial enquiries we agreed that
+            we would need to have a login system, employee tracking, users grouped by their current work teams and
+            approvers to validate any time off requested.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/oQwTgFDWucEH0ettKepIdkhfCYFxHVcLHwi6HleUEeaSKW62Uy6mZmUCDXdZXE84e0vP0cKKKgWpvgHYA8wlZ0TsUnwPL4lQKoWC26ChOPLB1jE3F7Xk2MoCJNC73X0JWHzOetlrQw=w2400' /></center>
+
+
+        <center>
+            <p style="font-size: 30px">Defining Requirements</p>
+        </center>
+
+        <p> After all the meetings and conferring with the scrum master, we constructed a list of requirements that
+            would serve as the scaffolding for our overall project. This included things such as “Access and Display”
+            that focussed on the front end and initial login. The functionality of “Making Requests”, specifying how
+            users can interact with the site through the UI, the varying amount of time they can book off and receiving
+            automated emails. I also noted information that we collected for approvers, and what their abilities would
+            be such as who can be an approver and selecting the different request types they can approve. We covered as
+            much as possible with our documentation, to ensure that we produced the best possible product in an
+            effective and inclusive way for everyone involved. Using the requirements, we created small easy to digest
+            tasks that clearly reflected the work and the time required to complete them.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/G063pvux-tIfMyeB7f1Lj-2Pa1l14v4WZxT079TVBcQEriLG_jZOSXSD_EEEno_nJgA_RNCQh34R1X4nAc2Z9X8VbBsMTjvnl6Rw3QFJyfh5aYBmhJpWZjwOmzTMz5XSmjdMi3SpOw=w2400'
+                style="width: 700px; height: 300px;" /></center>
+
+        <p>
+            Together with our product owner we estimated that the work should be completed in four months. The third
+            quarter of 2018 would be our deadline to create a fully functioning and tested application. These were my
+            tasks for creating a meaningful dashboard. Most of these were primarily to do with HTML, Jquery and
+            Fetching data.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/i8MJaJlbMOeWVictSUorTLADdgr0Kni4ClXvdihL1KtyLGmxWkSsjJPtBLfA4gfkQihmxGxQd3ux2T6AWGZJVJw8ZEnW57gvgGdpY7laNV0SJkUow3W1fLNA_nbK5APQAJLHZ2iFhQ=w2400' /></center>
+
+        <p>
+            Throughout the project we used burndown graphs such as this one, to convey how much time had been lost due
+            to uncompleted tasks. This allowed us to have a clear visual representation of how well we were
+            progressing, whilst creating an underline sense of urgency to finish work in a timely manner. As you can
+            see in this graph, we were on target but in the last few days of that sprint some tasks were added. These
+            tasks were tester related and were created to resolve raised bugs that I will reference later on.
+        </p>
+        <center>
+            <p style="font-size: 30px">Designing the Product Architecture</p>
+        </center>
+
+        <p> The next step was the Design phase where myself and the other apprentice worked on the basic flow and
+            structure of the application. This allowed the team to collectively see how the app would work and what the
+            happy uninterrupted paths were. The diagram below highlights all the key directions the user could
+            potentially take when requesting time out of the office. It helped to show what parts of the application
+            that are crucial for a user to progress with their request. Examples of this are the login section to know
+            which user is currently applying for requests. The manager that is currently working to function as the
+            approver for that team. If the users wanted to cancel or edit a request, creating a new request and whether
+            it even requires approval.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/QjADncksmVDpZgUL11KrHMoKGOFe0SKk9y7jljLiT9Rusc4EoSE9twBtE52bFH_3XNWcdhGdj1byd-fhhyV331TFQnYfaKkkh_kZLunp_hT3DZJYM_inmJ5hWMQlzGVMnLvQpR5HGQ=w2400' /></center>
+
+
+        <p>
+
+            This highlighted what information we would need to collect from the user, helped us to create the tables
+            and stored procedures in our database. While providing the team with a clear visual representation of how
+            the application will function at a basic level.
+
+        </p>
+        <p>
+            I took on the tasks for the front end of the application, which was coded using HTML and Jquery. I began by
+            designing the layout of the landing page that users are initially directed to on paper. This included the
+            style, colour coding, separation of events and information to be included within those events. I
+            highlighted how different requests will have statuses that indicate if they are approved or waiting to be
+            approved. I included clear indications If the event is a full day out of the office, AM or PM absence. Even
+            at this stage we were planning click functionality to allow users to right click on events and have a
+            context menu for quick tasks. This included going to the pending request page to see which events were yet
+            to be approved and making a request directly on the calendar, instead of going to fill out a request form
+            on a different page.
+
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/_7LKKYYGge2IXHAuL-uFYaEpDIGFxgI2OU_6AEW6L14B8DnvitZdXHL8QWaj40k-pqapzJWYQYSktgJmp-TnB69PV8HEr9lEIaNKcuA9cjI7G-Jzuqp7NY3NiymaCqytldpa0lCqog=w2400' /></center>
+
+        <p> I presented this design to the product owner and the other developer and took on board the comments that
+            they provided. I added the standard company header and logo, then the contact page. Next the company CSS
+            (Cascading Style Sheet) was added; It is used on all the applications to create a uniform brand. I included
+            the functionality of switching between a day, week and month view of the calendar. This is the layout that
+            we elected to use:
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/bK8jdpLLGF-9WQ60UBEuNktBQUozmzAFWWsi-aTpcw-xnIxMpUsfDOiTDaBPa7bDxCXPr8wQnvo8mBPOOv0OdgKbikM0CihiQOe5L_bmg_J4_SSlFoGtWgZLhv3DG8gCG6T5g1WZhw=w2400' /></center>
+
+        <p> When designing the app, we decided to split the users into their ICAEW teams because it would make the
+            calendar less cluttered and easier for their team leader to manage. Some employees within the company, have
+            tasks that heavily rely on other workers before they can be completed. These uncompleted tasks can
+            potentially cause bottlenecks and stall progress which costs us time and money. The most common of these
+            bottlenecks come from waiting for testing, database issues and help desk tickets (Errors raised by users
+            and employees). We recognised this and included the ability for a few select users to filter other teams’
+            calendars, as well as their own. After checking the calendar, users can see if any key employees are not
+            available that sprint, and then decide which current tasks would take priority.
+        </p>
+
+        <center>
+            <p style="font-size: 30px">Building or Developing the Product</p>
+        </center>
+        <p>
+            Database
+        </p>
+        <p>
+            Myself and the other developer worked together to create the database for the application. We each chose
+            the sections we would create for our separate tasks; we regularly checked in with one another to ensure
+            that our work was uniform and up to ICAEW standards. With the information and notes I previously gathered
+            from the happy path diagram, I created the table for the user’s absence requests. This included selecting
+            which fields could potentially be null (have no input data from the user) and which fields must include
+            input data.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/t5mwvQSpwoGNkKMN-TlgbH0Fb5mkXs-kFXLpMPJfaJU4S2jlh7gbD_6qu9QQchgLHuwRLFzs6pSESPRpC5ORpNEHnB1QWyIziuUWNQMmPEMREEWsUy4YSy2q5tVDp05Sb8KnaxGbAQ=w2400'
+                style="height: 500px; width: 650px;" /></center>
+
+        <p>
+            Once we had our tables, we created the CRUD stored procedures that would function as our way to populate
+            the database with all
+            the required information from users.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/65DrvvRuRgQyWDpHAQcU0UQ-ROqyAlbuQH7_FW7gDQxHU1zal7rmyB1h8zBHpL9n7Q1XrWaQ8b22sGZxw7iOihzHqQK_gyOowL-Z0NrWwX6iRK5GssjTr8tBn__mMDzk2Dw4G2oiSg=w2400' /></center>
+
+        <ul>
             <li id="list">Request Type Id </li>
             <ul>
-            <li id="list">Represents different types of leave (Holiday, Working from Home, Training and Time Off in Lieu)</li>
+                <li id="list">Represents different types of leave (Holiday, Working from Home, Training and Time Off in
+                    Lieu)</li>
             </ul>
             <li id="list">Status </li>
             <ul>
-            <li id="list">If the request has been Approved, Pending or Declined.</li>
+                <li id="list">If the request has been Approved, Pending or Declined.</li>
             </ul>
             <li id="list">User Comment </li>
             <ul>
-            <li id="list">Any added information from the user.</li>
+                <li id="list">Any added information from the user.</li>
             </ul>
             <li id="list">Availability Status</li>
             <ul>
-            <li id="list">Is the user available to work? Holiday would be no. Training no and Working from home is yes.</li>
+                <li id="list">Is the user available to work? Holiday would be no. Training no and Working from home is
+                    yes.</li>
             </ul>
             <li id="list">Availability Comment </li>
             <ul>
-            <li id="list">Any added information about availability.</li>
+                <li id="list">Any added information about availability.</li>
             </ul>
-            <li id="list">Reviewer User Id  </li>
+            <li id="list">Reviewer User Id </li>
             <ul>
-            <li id="list"> Who approved or declined the request.</li>
+                <li id="list"> Who approved or declined the request.</li>
             </ul>
-            <li id="list">Review Date 	 </li>
+            <li id="list">Review Date </li>
             <ul>
-            <li id="list">The date it was approved or declined.</li>
+                <li id="list">The date it was approved or declined.</li>
             </ul>
             <li id="list">Reviewer Comment </li>
             <ul>
-            <li id="list">Any additional information from the approver. Potentially a reviewer could specify why they declined a request e.g. 
-                “That date is unsuitable for you to be out of the office as this is an important release date and we require you to oversee 
-                the work”.</li>
+                <li id="list">Any additional information from the approver. Potentially a reviewer could specify why
+                    they declined a request e.g.
+                    “That date is unsuitable for you to be out of the office as this is an important release date and
+                    we require you to oversee
+                    the work”.</li>
             </ul>
-            </ul>
+        </ul>
 
-            <p>
-            Including the “Last Modified By / Last Modified Date” fields allowed greater traceability for our requests as we could determine 
-            how recent the request was made, when the last edit was and who approved it. The next step was designing the other tables that 
-            would allow us to separate users into clear, easy to define groups and teams. The first table was simply called “User” that contained 
-            information about that employee, such as their name, email and job position. In the table was also their Id which was a primary 
-            key and unique to every user. The next table was “Team” and I linked the job position from the first table as a foreign key in this 
-            one, to assign employees to their respective teams. Individual teams also had an Id and was done to allow me to easily filter through 
-            them on the calendar. 
-            </p>
+        <p>
+            Including the “Last Modified By / Last Modified Date” fields allowed greater traceability for our requests
+            as we could determine how recent the request was made, when the last edit was and who approved it. The next
+            step was designing the other tables that would allow us to separate users into clear, easy to define groups
+            and teams. The first table was simply called “User” that contained information about that employee, such as
+            their name, email and job position. In the table was also their Id which was a primary key and unique to
+            every user. The next table was “Team” and I linked the job position from the first table as a foreign key
+            in this one, to assign employees to their respective teams. Individual teams also had an Id and was done to
+            allow me to easily filter through them on the calendar.
+        </p>
 
-            <p>
-                    Entities and Data Access
-            </p>
-           <p>  
-                The other developer setup the base data access layers and the database connection. I created the access layers specific to the 
-                work that I was doing with the requests. I utilised the connection and linked the stored procedures that I had previously included 
-                in the database to this absence request command repository. 
-            </p>
+        <p>
+            Entities and Data Access
+        </p>
+        <p>
+            The other developer setup the base data access layers and the database connection. I created the access
+            layers specific to the work that I was doing with the requests. I utilised the connection and linked the
+            stored procedures that I had previously included in the database to this absence request command
+            repository.
+        </p>
 
-            <p> Each repository in the data access layer will have a corresponding interface which will then act as a contract for the repository. 
-                Each of the repositories will also inherit from the BaseRepository which will contain the basic methods needed to complete the CRUD 
-                functions. By including the interfaces within the projects, it then means that the code does not need to be duplicated for each one 
-                meaning that development time can be saved and fewer mistakes are likely to happen. This is the beneficial to the business because it
-                means that less time needs to be allocated to the physical development of the project, mistakes are easier to fix and less likely to 
-                occur, meaning a lower risk of deploying broken code out to the users and if something needed changing then it would be easy to substitute 
-                the code into a single place rather than have to deploy it out to every instance where it is used and produced. 
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/FOxv4vosRzRQrWLeHwSm1f1Pl01iQ-9PVGayi_jitr_R1DoIEbFfQ7TQ00jrvxjm-gY0fN3XAA9isow9RXBWFQO8avxA9HeWCX_NK1ts93GbTa-ZuJahWyXr6cygo9NkjQRmhuPcEQ=w2400' /></center>
-            <p>
-                This provided the application with a link to insert parameters to create requests on the client side, that we could store in the database tables. 
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/2Hpv2_Bg-Qq4XrEJ2gx1wanU5KzMuDhj3s5WVHZhuRYK8d9l6JVwwwMxdYtLehhKW-TIfDOG2FwscGRe0UQzJ3uwphPTzf72xjEJ8wWzct5eTFxB6s36Zyvfi6SCNlf9Or1r-wzNgw=w2400' style="width: 550px;"/></center>
-            
-            <p>
-                    I initially sketched out the basic layout of the program architecture and how the entities would overlap into different 
-                    sections of the app. Information would be needed from the database to be displayed to the web views and the entities are 
-                    how we transfer that data.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/cDm0rBQcaFIvlKMSgHKAxpitZO9XDKAfWmiMjtqJr2VIwGB4fP0kH03AjGhwBQ6W0BfQCR1ZB-ZePd6Al_7UVBqwKZLLIG0Zyo9LLPZ2yDZoGuk-IQdl_eho6eeHYPejkyj5JGNifA=w2400' style="height: 600px; width: 500px;"></center>
-            
-           
-            <p>
-                    We had a section of code that retrieved all of the information from the database, that is required for the events on the calendar. The 
-                    application worked perfectly with the code stepping through the entities individually, picking up the data we needed. The issue appeared 
-                    when the users increased to more than ten because we did not account for scaling. The method that I implemented took far too long to 
-                    return any data for the request. The limit for loading was set to 15-20 seconds, and the current search was taking well over two minutes. 
-                    This was unacceptable and would prove useless in the long term as the company employs well over a thousand people, which would break the 
-                    application. I resolved this loading issue by changing the method to step through a single entity, instead of jumping to different entities 
-                    and wasting time.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/bbTfTOmD4xdwAL_rU3dO6d1U3xGHcPmqjFKNDZ11HLY5-Iytsmo0fqqgfSSjCzi16p0RDpzhIvj6Sul043GlVoE0yTdnE-TmYDY3pC1y2X3dxJG07b4vDuXiRMMV_wojGJRSKNI9DA=w2400' style="width: 550px;"/></center>
-            <p>
-                    I created a new entity called “Calendar Event” that was a collection of elements from all the other entities and only returned the specific 
-                    information we required. This significantly reduced the loading time and retrieved the information in a much more effective way, that in turn 
-                    was less taxing on the processing power. The entities carry the data through the application from the database to the web app and the web service. 
-            </p>
-            <p>
-                    Once we could access the data, we populated the calendar with the events. Here is some of the Jquery logic below.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/V5H26JbLuRKPq7lwLU_ZGuGpXoCQ4eSgbJoytvxZiVsYuY-CyQUKB6LhQDV4NERgBLRwfrTj1138klwfSwS33a-qka3r1gAffrWb94u4ym5piRYsS-_2B7mA1NtKrV7IX4jJwWixIg=w2400' style="height: 300px; width: 800px;"/></center>
-            <p>The http get request goes into the web API which then accesses the database and returns the information under the parameters we searched for. In 
-                this case the User Id is already stated because the user is logged into our app so that field will be automatically populated.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/S6gUCixe-TzOX1w1A0tHeHkhJuBHrblLSKGE9a73W1i1QdpXhiMumBC-o2ULRUquatkN-O-s61szDPbfHmAoF7IFH2pzvNAca8U6bPNbSUqae_GNKbWvB77L6nuAeBvYppWZT6nG_Q=w2400' style="height: 200px; width: 800px;"/></center>
-            <p>The Get Team Absence Request method is fired and the dates that correspond to the date range selected by the user on the calendar will feed into this call.</p>
-            <center><img src='https://lh3.googleusercontent.com/Nu1rRWW7SZYfuTm_Xr9kKaxTV_rezBf57czL5JZ5KFhYtASt0_JHDBK0ALYg-Mxot92XXMMb_ek3lzqb8DJYKsr46VWCt-ibdLkxm68r7l56MZUH4EunHYfyFBgmRKrwUNwRG5mdkg=w2400' /></center>
-            <p>
-                    In the screen shot below, the “var result = response.data” variable is where the information is returned and captured after it has been retrieved. 
-                    We can then use this data and filter through it, to separate information such as teams and request types to produce our individual events on the 
-                    calendar.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/6vx3pOWTSxeq92RDdZPKX4jm7hGc8iSJcqXq0u7lz4iL2ZgzXbxIcSgh6dWfiCgCZ8fXwti63oEJ8ZZrhFTB8sVO-LyT_idmDC0oX_-C3RKxRv9pacO-kLeRAyr_vvh86F5MoOtkcg=w2400' style="height: 700px;"/></center>
-            <p>
+        <p> Each repository in the data access layer will have a corresponding interface which will then act as a
+            contract for the repository. Each of the repositories will also inherit from the BaseRepository which will
+            contain the basic methods needed to complete the CRUD functions. By including the interfaces within the
+            projects, it then means that the code does not need to be duplicated for each one meaning that development
+            time can be saved and fewer mistakes are likely to happen. This is the beneficial to the business because
+            it means that less time needs to be allocated to the physical development of the project, mistakes are
+            easier to fix and less likely to occur, meaning a lower risk of deploying broken code out to the users and
+            if something needed changing then it would be easy to substitute the code into a single place rather than
+            have to deploy it out to every instance where it is used and produced.
+        </p>
 
-                    Each individual request was labelled as an event and the information could then be filtered based upon the parameters the user entered. This 
-                    could easily allow users to transition between a calendar populated by events for holidays if they wanted to book off time of their own; and 
-                    working from home events to see which employees are unavailable to speak in person that week. The HTML that links with this filtering and 
-                    allows users to refine their calendar searches is also below.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/wwPfjMmRH0tgBp1Cbjr-eLharv7tC4BdjmNxiWsAbotAqcLMp321XX9IlPkyVqtvfzSMRT1nbAPo2_RZlDpRy7V7Gs1VTQ4uMFBg9lyRZ1QWWjrsyinGrq774rYM7-NIvMbV2HE3aA=w2400' style="height: 450px; width: 700px;"/></center>
-            <p>
-                    After many sessions going back and forth with the product owner over the style and layout of the page, this is the end result.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/Xt5h_3MlF_irS1J4oNqmjEq43fYgqYsZU1FWCn8cr9t7sThqDQERWeaJ4uCmDSsL9BDNRQesHAWxXx7JuLR9MKiMnxi88UAsAsVNQsSNxTp5p56KUexDetGpRb0-fZFgoAcAvWkUjQ=w2400'style="height: 600px;" /></center>
-            <p>
-                    I stuck to the guidelines I was provided with and created a view that corresponded with the ICAEW standards. Here is another view when 
-                    users select the week filter tab.
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/Xi4KIOrHZhcZklWlNuWxBiV6PCGToZRu2dv320hzPt0aqZVW8ilTE8JWFBxXU_brtKNz7FjderSFEgr6Ayyxsdq4gjJNLIiNU7FwXFQdWiYsMDVeCHRpGqouV9nfYS_wkYtEWgzOKw=w2400' style="height: 600px;"/></center>
-            <center><p style="font-size: 30px">Testing the Product</p></center>
-            <p>                    
-                    Once we pushed our work into the team repository the testers began to go through each page and see what elements could potentially fail and 
-                    cause bugs. The first one that was raised was users were able to select a start date in the past and create a valid request. Also, in the 
-                    same failure the tester spotted that the users start date could be after the end date. This was a simple fix of implementing some logic that 
-                    limited the user to only select start dates past the current date, and if the end date is less than the start date it will throw an error. 
-            </p>  
+        <center><img src='https://lh3.googleusercontent.com/FOxv4vosRzRQrWLeHwSm1f1Pl01iQ-9PVGayi_jitr_R1DoIEbFfQ7TQ00jrvxjm-gY0fN3XAA9isow9RXBWFQO8avxA9HeWCX_NK1ts93GbTa-ZuJahWyXr6cygo9NkjQRmhuPcEQ=w2400' /></center>
 
-            <p>The next problem was the calendar that we elected to use clashed with the CSS we used. The calendar primarily stores events as bars, that are 
-                then placed in the box that represents the date of the event. The issue appeared when multiple events were stored in a single day. Instead of 
-                appearing as a bar of ellipses and leaving the box the same size, the box stretched vertically to fit every single event inside it. The image 
-                of this occurring is below and we were unable to fix this issue within the time frame but that is in the section for future improvements. 
-            </p>
-            <center><img src='https://lh3.googleusercontent.com/8pVSellKtvd5l7F9-3hMJAjvqwx8L2YV33xG0zKUrfpxbaD_kFcRQNcvGYRNXAVJyTzXYxsk8Fj_hyniSy-cSjlNolSt5z3FDJHyZO3J2ckKtuOKXEaZkOmoi_RzUFxe-lwyYhut4Q=w2400' /></center>
-            <p>One of the testers made himself a part of three teams to observe how the system would behave and he could indeed view other teams’ calendars. 
-                The issue was that because he was overlapping into other teams, the calendar duplicated events and showed them all on the same calendar. The 
-                system could not distinguish between the duplicates so it produced them all for every team. This is another issue that we are planning to fix 
-                for the future; the application is currently being used for a single team so this problem does not affect us at this time. Going forward when 
-                the application is released for the entire business, this will be one of the first issues that is addressed.
-            </p>
-            <br>
-            <br>
-            <br>
-        </body>
-    </div>
+        <p>
+            This provided the application with a link to insert parameters to create requests on the client side, that
+            we could store in the database tables.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/2Hpv2_Bg-Qq4XrEJ2gx1wanU5KzMuDhj3s5WVHZhuRYK8d9l6JVwwwMxdYtLehhKW-TIfDOG2FwscGRe0UQzJ3uwphPTzf72xjEJ8wWzct5eTFxB6s36Zyvfi6SCNlf9Or1r-wzNgw=w2400'
+                style="width: 550px;" /></center>
+
+        <p>
+            I initially sketched out the basic layout of the program architecture and how the entities would overlap
+            into different sections of the app. Information would be needed from the database to be displayed to the
+            web views and the entities are how we transfer that data.
+        </p>
+        <center><img src='https://lh3.googleusercontent.com/cDm0rBQcaFIvlKMSgHKAxpitZO9XDKAfWmiMjtqJr2VIwGB4fP0kH03AjGhwBQ6W0BfQCR1ZB-ZePd6Al_7UVBqwKZLLIG0Zyo9LLPZ2yDZoGuk-IQdl_eho6eeHYPejkyj5JGNifA=w2400'
+                style="height: 600px; width: 500px;"></center>
+
+
+        <p>
+            There was a section of code that is required to data map the information from the database into the
+            calendar. The application worked perfectly with the code stepping through the entities individually,
+            picking up the data we needed. The issue appeared when the users increased to more than ten because we did
+            not account for scaling. The method that I implemented took far too long to return any data for the
+            request. The limit for loading was set to 15-20 seconds, and the current search was taking well over two
+            minutes. This was unacceptable and would prove useless in the long term as the company employs well over a
+            thousand people, which would break the application. I resolved this loading issue by changing the method to
+            step through a single entity, instead of jumping to different entities and wasting time.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/bbTfTOmD4xdwAL_rU3dO6d1U3xGHcPmqjFKNDZ11HLY5-Iytsmo0fqqgfSSjCzi16p0RDpzhIvj6Sul043GlVoE0yTdnE-TmYDY3pC1y2X3dxJG07b4vDuXiRMMV_wojGJRSKNI9DA=w2400'
+                style="width: 550px;" /></center>
+
+        <p>
+            I created a new entity called “Calendar Event” that was a collection of elements from all the other
+            entities and only returned the specific information we required. This significantly reduced the loading
+            time and retrieved the information in a much more effective way, that in turn was less taxing on the
+            processing power. The entities carry the data through the application from the database to the web app and
+            the web service.
+        </p>
+        <p>
+            Once we could access the data, we populated the calendar with the events. Here is some of the Jquery logic
+            below.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/V5H26JbLuRKPq7lwLU_ZGuGpXoCQ4eSgbJoytvxZiVsYuY-CyQUKB6LhQDV4NERgBLRwfrTj1138klwfSwS33a-qka3r1gAffrWb94u4ym5piRYsS-_2B7mA1NtKrV7IX4jJwWixIg=w2400'
+                style="height: 300px; width: 800px;" /></center>
+
+        <p>The http get request goes into the web API which then accesses the database and returns the information
+            under the parameters we searched for. In this case the User Id is already stated because the user is logged
+            into our app so that field will be automatically populated.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/S6gUCixe-TzOX1w1A0tHeHkhJuBHrblLSKGE9a73W1i1QdpXhiMumBC-o2ULRUquatkN-O-s61szDPbfHmAoF7IFH2pzvNAca8U6bPNbSUqae_GNKbWvB77L6nuAeBvYppWZT6nG_Q=w2400'
+                style="height: 200px; width: 800px;" /></center>
+
+        <p>The Get Team Absence Request method is fired and the dates that correspond to the date range selected by the
+            user on the calendar will feed into this call.</p>
+
+        <center><img src='https://lh3.googleusercontent.com/Nu1rRWW7SZYfuTm_Xr9kKaxTV_rezBf57czL5JZ5KFhYtASt0_JHDBK0ALYg-Mxot92XXMMb_ek3lzqb8DJYKsr46VWCt-ibdLkxm68r7l56MZUH4EunHYfyFBgmRKrwUNwRG5mdkg=w2400' /></center>
+
+        <p>
+
+            In the screen shot below, the “var result = response.data” variable is where the information is returned
+            and captured after it has been retrieved. We can then use this data and filter through it, to separate
+            information such as teams and request types to produce our individual events on the calendar.
+
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/6vx3pOWTSxeq92RDdZPKX4jm7hGc8iSJcqXq0u7lz4iL2ZgzXbxIcSgh6dWfiCgCZ8fXwti63oEJ8ZZrhFTB8sVO-LyT_idmDC0oX_-C3RKxRv9pacO-kLeRAyr_vvh86F5MoOtkcg=w2400'
+                style="height: 700px;" /></center>
+
+        <p>
+
+            Each individual request was labelled as an event and the information could then be filtered into week,
+            month, day and team Id. This could easily allow users to transition between a calendar populated by events
+            for holidays if they wanted to book off time of their own; and working from home events to see which
+            employees are unavailable to speak in person. The HTML that links with this Jquery filtering and allows
+            users to refine their calendar searches is also below.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/wwPfjMmRH0tgBp1Cbjr-eLharv7tC4BdjmNxiWsAbotAqcLMp321XX9IlPkyVqtvfzSMRT1nbAPo2_RZlDpRy7V7Gs1VTQ4uMFBg9lyRZ1QWWjrsyinGrq774rYM7-NIvMbV2HE3aA=w2400'
+                style="height: 450px; width: 700px;" /></center>
+
+        <p>
+            After many sessions going back and forth with the product owner over the style and layout of the page, this
+            is the end result.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/Xt5h_3MlF_irS1J4oNqmjEq43fYgqYsZU1FWCn8cr9t7sThqDQERWeaJ4uCmDSsL9BDNRQesHAWxXx7JuLR9MKiMnxi88UAsAsVNQsSNxTp5p56KUexDetGpRb0-fZFgoAcAvWkUjQ=w2400'
+                style="height: 600px;" /></center>
+
+        <p>
+            I stuck to the guidelines I was provided with and created a view that corresponded with the ICAEW
+            standards. Here is another view when users select the week filter tab.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/Xi4KIOrHZhcZklWlNuWxBiV6PCGToZRu2dv320hzPt0aqZVW8ilTE8JWFBxXU_brtKNz7FjderSFEgr6Ayyxsdq4gjJNLIiNU7FwXFQdWiYsMDVeCHRpGqouV9nfYS_wkYtEWgzOKw=w2400'
+                style="height: 600px;" /></center>
+
+
+        <center>
+            <p style="font-size: 30px">Testing the Product</p>
+        </center>
+        <p>
+
+            Once we pushed our work into the team repository the testers began to go through each page and see what
+            elements could potentially fail and cause bugs. The first one that was raised was users were able to select
+            a start date in the past and create a valid request. Also, in the same failure the tester spotted that the
+            users start date could be after the end date. This was a simple fix of implementing some logic that limited
+            the user to only select start dates past the current date, and if the end date is less than the start date
+            it will throw an error.
+
+        </p>
+
+        <p>The next problem was the calendar that we elected to use clashed with the CSS we used. The calendar
+            primarily stores events as bars, that are then placed in the box that represents the date of the event. The
+            issue appeared when multiple events were stored in a single day. Instead of appearing as a bar of ellipses
+            and leaving the box the same size, the box stretched vertically to fit every single event inside it. The
+            image of this occurring is below and we were unable to fix this issue within the time frame but that is in
+            the section for future improvements.
+        </p>
+
+        <center><img src='https://lh3.googleusercontent.com/8pVSellKtvd5l7F9-3hMJAjvqwx8L2YV33xG0zKUrfpxbaD_kFcRQNcvGYRNXAVJyTzXYxsk8Fj_hyniSy-cSjlNolSt5z3FDJHyZO3J2ckKtuOKXEaZkOmoi_RzUFxe-lwyYhut4Q=w2400' /></center>
+
+        <p>One of the testers made himself a part of three teams to observe how the system would behave and he could
+            indeed view other teams’ calendars. The issue was that because he was overlapping into other teams, the
+            calendar duplicated events and showed them all on the same calendar. The system could not distinguish
+            between the duplicates so it produced them all for every team. This is another issue that we are planning
+            to fix for the future; the application is currently being used for a single team so this problem does not
+            affect us at this time. Going forward when the application is released for the entire business, this will
+            be one of the first issues that is addressed.
+        </p>
+        <p>
+            Another issue highlighted by the testers was the context menu didn’t direct you to the correct invite. When
+            users right clicked on a specific request, it linked them to the pending request page or just the most
+            recent invite. I found that the specific Id for the absence request wasn’t going to the right place. I was
+            unable to get the Id to parse into the view and attach to the link when the specific event was clicked. I
+            spent a lot of time on these issues but they were hindering the overall application completion time. I
+            corrected some of the other issues in the context menu such as directing users straight to the create
+            request page. Unfortunately, I couldn’t finish the specific event redirection so this task was also placed
+            in the future fix section.
+        </p>
+        <center>
+            <p style="font-size: 30px">Conclusion</p>
+        </center>
+
+        <p>
+            I completed all the major tasks I was set and the work was approved to be pushed up to the server. I gained
+            a lot of experience with SQL, HTML, C# and the visual studio environment throughout the development of this
+            application. If I had more time, I would have liked to have finished the work on my context menu as I feel
+            it would have made the page more streamline and user friendly. I thoroughly enjoyed the independence I had
+            with the project, even though we had some guidelines to stick to. My input and ideas were taken on board by
+            the team and if there were ever instances where I had suggestions that were unable to be implemented; I was
+            told why that particular idea was not feasible. These instances were primarily cosmetic and were unable to
+            be implemented due to our tight time constraints. I learned a lot about the software development life cycle
+            and how to be a more agile developer. My personal skills were developed and enhanced in line with business
+            processes. This was due to the adoption and engagement with agile and scrum methodologies, integrated with
+            a variety of scenarios key to creating a working product.
+        </p>
+
+
+    </body>
+</div>
+
 </html>
